@@ -1,0 +1,126 @@
+@media screen and (max-width: 1024px) {
+    .long-container {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 90%;
+        gap: 20px;
+    }
+    .shorts-container {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 90%;
+        gap: 20px;
+    }
+    .contact-tab {
+        gap: 20px;
+    }
+    .contact-card {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+    .menu-toggle {
+        display: flex;
+    }
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 75%;
+        height: 100vh;
+        background-color: rgba(13, 14, 18, 0.98);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 35px;
+        transition: right 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+    }
+    .nav-links.active {
+        right: 0;
+    }
+    .nav-links a {
+        font-size: 1.25rem !important;
+        color: #ffffff !important;
+    }
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .conteudo {
+        transform: translateY(0);
+        margin: auto 0;
+        padding: 0 20px;
+    }
+    .conteudo h1 {
+        font-size: 2.5rem;
+    }
+    .conteudo p {
+        font-size: 1.1rem;
+    }
+    .secao-titulo, .contact-titulo {
+        font-size: 1.8rem;
+        margin: 20px 0;
+    }
+    .portfolio-section {
+        padding: 40px 15px;
+    }
+    .long-container, .shorts-container {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        gap: 20px;
+    }
+    .play-btn {
+        width: 55px;
+        height: 55px;
+    }
+    .play-btn::after {
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-left: 13px solid #fff;
+        margin-left: 4px;
+    }
+    .meio {
+        padding: 40px 15px;
+    }
+    .contact-tab {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .contact-card {
+        width: 100%;
+        max-width: 340px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .conteudo h1 {
+        font-size: 2rem;
+    }
+    .botao {
+        padding: 14px 24px;
+        font-size: 0.9rem;
+    }
+    .card-banner {
+        height: 100px;
+    }
+    .card-avatar {
+        width: 70px;
+        height: 70px;
+        top: 65px;
+    }
+    .card-body {
+        padding: 45px 15px 15px 15px;
+    }
+}
